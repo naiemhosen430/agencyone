@@ -1,0 +1,706 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+}
+:root {
+  --bg_color: #131619;
+  --whit: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131619;
+}
+
+.container {
+  width: 99%;
+  margin: auto;
+}
+/************************************************************
+start section nav code
+************************************************************/
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(105, 44, 44);
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  z-index: 10000;
+}
+.img {
+  display: flex;
+  align-items: center;
+  width: 24%;
+}
+.img > img {
+  width: 10%;
+  margin-left: 40px;
+  padding: 0px 0;
+}
+.img > span {
+  color: var(--whit);
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.menu {
+  width: 50%;
+  display: inline-block;
+}
+.menu > ul {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.menu > ul > li {
+  text-align: center;
+  width: 20%;
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px 0;
+}
+.active_m {
+  color: dodgerblue !important;
+  border-bottom: 1px solid white;
+}
+.menu > ul > li > a {
+  color: gray;
+  padding: 20px 0;
+  text-decoration: none;
+}
+.menu > ul > li > a:hover {
+  color: dodgerblue;
+  border-bottom: 1px solid white;
+}
+.register_box {
+  width: 15%;
+  text-align: center;
+}
+.register_box > button {
+  width: 40%;
+  padding: 10px 0;
+  font-size: 18px;
+  background: none;
+  color: white;
+}
+.register_box > button > a {
+  color: white;
+  text-decoration: none;
+}
+.register_box > button:nth-child(1) a {
+  color: wheat;
+}
+.src {
+  padding: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 3%;
+  height: 30px;
+  background-color: rgb(131, 88, 88);
+  display: inline-block;
+}
+.src > img {
+  font-size: 20px;
+  width: 100%;
+  height: 20px;
+}
+
+.lan {
+  background: none;
+  color: rgb(194, 150, 150);
+  width: 5%;
+}
+
+/************************************************************
+start section hero code
+************************************************************/
+.hero_box {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+.content_box {
+  width: 49%;
+  display: inline-block;
+  padding: 20px 20px 20px 100px;
+}
+.content_box > h1 {
+  color: white;
+  font-size: 55px;
+  padding-bottom: 40px;
+}
+.content_box > p {
+  color: #a0a0a0 !important;
+  font-size: 18px;
+  line-height: 28px;
+}
+.content_box > button {
+  padding: 10px 20px;
+  font-size: 23px;
+  margin-top: 40px;
+  background-color: brown;
+  color: white;
+  transition: 0.5s linear;
+  margin-right: 30px;
+}
+.content_box > button > a {
+  display: block;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+.content_box > button:hover {
+  color: wheat;
+  background-color: rgb(92, 19, 19);
+}
+.image_boxx {
+  text-align: center;
+  padding: 50px;
+  width: 49%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.image_boxx > img {
+  width: 80%;
+}
+
+.anli_box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.analize {
+  display: inline-block;
+  width: 20%;
+}
+.analize > h1 {
+  color: white;
+  font: bold;
+  font-size: 40px;
+}
+.analize > h6 {
+  padding-top: 10px;
+  color: #fafafa;
+  font-size: 14px;
+}
+
+/************************************************************
+start section one code
+************************************************************/
+.one {
+  padding: 100px 0;
+}
+.one > h1 {
+  padding: 25px 100px;
+  font-size: 30px;
+  color: white;
+  padding: 0 9.5%;
+  padding-bottom: 15px;
+}
+.one > p {
+  font-size: 15px;
+  padding: 0 9.5%;
+  color: rgb(197, 170, 170);
+}
+.all_service_box {
+  padding: 50px 100px;
+  padding-bottom: 10px;
+}
+.service_box {
+  border-radius: 10px;
+  margin: 2%;
+  display: inline-block;
+  width: 29%;
+  height: 300px;
+  background-color: #131619;
+  box-shadow: 0 0 10px 0 #000000;
+}
+.service_box:hover {
+  background-color: rgb(5, 27, 36);
+  box-shadow: 0 0 20px 0 #000000;
+}
+.service_box:nth-child(2) > h2 {
+  font-size: 15px;
+}
+.service_box > h1 {
+  text-align: left;
+  font-size: 25px;
+  border-radius: 100px;
+  color: white;
+  border: 2px solid black;
+  box-sizing: 0 10px 0 0 #161616;
+  display: inline-block;
+  padding: 10px;
+  margin: 30px 50px;
+  margin-top: 50px;
+}
+.service_box > h2 {
+  text-align: left;
+  color: white;
+  font-size: 17px;
+  padding: 0 50px;
+}
+.service_box > h3 {
+  font-size: 15px;
+  text-align: left;
+  color: rgb(151, 139, 115);
+  padding: 20px 20px 10px 50px;
+  line-height: 23px;
+}
+.service_box > button {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: gray;
+  color: black;
+  margin-left: 50px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.one > button {
+  font-size: 20px;
+  background-color: rgb(175, 54, 54);
+  color: white;
+  display: block;
+  margin: auto;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  transition: 0.5s linear;
+}
+.one > button:hover {
+  background-color: green;
+  color: brown;
+}
+/************************************************************
+start section two code
+************************************************************/
+.two {
+  margin: 20px 50px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  z-index: 1;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides,
+.mySlidess {
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade,
+.fadee {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/************************************************************
+start section two code
+************************************************************/
+.four {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+.content_box_2 {
+  width: 49%;
+  display: inline-block;
+}
+.content_box_2 > h1 {
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px 150px;
+  padding-right: 0;
+}
+.content_box_2 > p {
+  color: rgb(236, 229, 229);
+  padding-left: 150px;
+  font-size: 18px;
+  text-align: left;
+}
+.content_box_2 > button {
+  display: block;
+  margin-left: 150px;
+  margin-top: 20px;
+  padding: 5px 20px;
+  font-size: 18px;
+  transition: 0.5s linear;
+  border-radius: 10px;
+}
+.content_box_2 > button:hover {
+  background-color: brown;
+  color: white;
+}
+.img_box_2 {
+  text-align: center;
+  width: 49%;
+  display: inline-block;
+}
+.img_box_2 > img {
+  width: 70%;
+  padding: 50px 0;
+}
+/***************************************
+start section client code
+***************************************/
+.client {
+  padding: 100px 0;
+}
+.client > h1 {
+  color: white;
+  padding-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+.client > h2 {
+  text-align: right;
+  padding: 0 40px;
+}
+.client > h2 > a {
+  text-decoration: none;
+}
+.all_review_box {
+  text-align: center;
+  padding: 40px;
+  padding-top: 0px;
+}
+.sub_review_box {
+  margin: 2%;
+  width: 40%;
+  display: inline-block;
+}
+.review_box {
+  background-color: rgb(167, 67, 67);
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin: 40px 0;
+  box-shadow: 0 0 2px 0 gray;
+}
+.review_box:nth-child(1) {
+  margin-top: 15px;
+}
+.review_box:hover {
+  background-color: rgb(95, 62, 30);
+  box-shadow: 0 0 10px 0 gray;
+}
+.image_box_review {
+  width: 50%;
+}
+.image_box_review > img {
+  border-radius: 10px;
+  width: 90%;
+  padding-bottom: 20px;
+}
+.image_box_review > h6 > span {
+  color: white;
+  display: inline-block;
+  width: 59%;
+  text-align: left;
+  padding: 4px 0;
+  font-size: 10px;
+}
+.image_box_review > h6 > a {
+  color: wheat;
+  width: 39%;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: default;
+  text-align: right;
+  display: inline-block;
+}
+
+.review_content {
+  text-align: left;
+  width: 75%;
+  display: inline-block;
+}
+.review_content > h1 {
+  padding: 0px 10px 10px 20px;
+  color: white;
+  text-decoration: underline;
+}
+.review_content > p {
+  color: wheat;
+  padding: 0px 10px 100px 20px;
+}
+/************************************************************
+start section five code
+************************************************************/
+.five {
+  background: url(image/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 80px 20px;
+}
+
+.five > h1 {
+  text-align: center;
+  color: white;
+}
+.five > p {
+  text-align: center;
+  color: rgb(230, 221, 221);
+  padding: 20px;
+}
+.two_box {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+.form_box {
+  margin-left: 10%;
+  display: inline-block;
+  width: 40%;
+}
+.form_name {
+  width: 48%;
+  margin-right: 1%;
+  display: inline-block;
+  background-color: rgb(146, 85, 85);
+  border: 1px solid gray;
+}
+.form_name > img {
+  height: 12px;
+  width: 10%;
+  padding-bottom: 0;
+  display: inline-block;
+  background: none;
+}
+.form_name > input {
+  width: 90%;
+  border-left: 1px solid gray;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #131619;
+  color: white;
+  padding-bottom: 5px;
+}
+.form_email {
+  background-color: rgb(146, 85, 85);
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  width: 48%;
+  margin-left: 1%;
+  display: inline-block;
+}
+.form_email > img,
+.comn {
+  height: 12px;
+  width: 10%;
+  padding: 0px 0px;
+  padding-bottom: 0;
+  display: inline-block;
+  background: none;
+}
+.form_email > input,
+.comn2 {
+  width: 90%;
+  border-left: 1px solid gray;
+  background-color: #131619;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  padding-bottom: 5px;
+}
+.form_subject {
+  background-color: rgb(146, 85, 85);
+  border: 1px solid gray;
+  display: flex;
+  width: 99.2%;
+  margin: 20px 0;
+  align-items: center;
+  display: block;
+}
+.comn {
+  width: 5%;
+}
+.comn2 {
+  width: 95%;
+}
+
+.form_message {
+  background-color: rgb(146, 85, 85);
+  border: 1px solid gray;
+  display: flex;
+  width: 99.2%;
+  margin: 20px 0;
+  align-items: center;
+  display: block;
+}
+
+.text_area {
+  max-width: 95%;
+  max-height: 50px;
+}
+
+form > button {
+  padding: 13px 25px;
+  font-size: 20px;
+  background-color: #131619;
+  color: white;
+  border-radius: 20px;
+  transition: 0.5s linear;
+}
+form > button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.info_box {
+  margin-right: 10%;
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+}
+.info_box > ul > li {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+  padding: 7px;
+}
+.info_box > ul > li > img {
+  background-color: white;
+  padding: 2px;
+  width: 4%;
+  height: 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 150px;
+}
+
+/************************************************************
+start section footer code
+************************************************************/
+footer {
+  background-color: #131619;
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.footer_div {
+  width: 15%;
+  display: inline-block;
+}
+.one_box {
+  margin-left: 7%;
+  width: 40%;
+}
+.one_box > h1 {
+  font-size: 40px !important;
+  padding-bottom: 0 !important;
+  color: white;
+}
+.one_box > p {
+  color: gray;
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
+.search_box > input {
+  color: gray;
+  border-radius: 5px 0 0px 5px;
+  padding: 10px 20px;
+  background-color: rgb(77, 42, 42);
+}
+.search_box > button {
+  border-radius: 0 5px 5px 0px;
+  padding: 10px 30px;
+  margin-left: -10px;
+  background-color: white;
+  color: black;
+}
+.image_box {
+  text-align: left;
+  margin: 20px 50px;
+}
+.image_box > img {
+  margin: 5px;
+  padding: 5px;
+  width: 30px;
+  background-color: white;
+  height: 30px;
+}
+.footer_div > h1 {
+  font-size: 15px;
+  color: white;
+  padding-bottom: 10px;
+}
+.footer_div > ul > li {
+  padding: 3px 0;
+  list-style: none;
+  color: gray;
+}
+.footer_div > ul > li:hover {
+  color: white;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
